@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const config = {
     env: process.env.NODE_ENV || 'development',
     port: process.env.PORT || 3000,
@@ -5,7 +7,7 @@ const config = {
     mongoUri: process.env.MONOGDB_URI ||
         process.env.MONGO_HOST ||
         'mongodb://' + (process.env.IP || 'localhost') + ':' +
-        (process.env.MONGO_PORT || '27017') + 'mernproject'
+        (process.env.MONGO_PORT || '27017') + 'mernproject',
 }
 
 export default config
