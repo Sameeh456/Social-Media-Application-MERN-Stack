@@ -5,7 +5,7 @@ export default () => {
           <meta charset="utf-8">
           <title>Social Media App</title>
         </head>
-        <body>
+        <body style="margin: 0px">
           <div id="root"></div>
           <script type="text/javascript" src="/dist/bundle.js"></script>
         </body>
